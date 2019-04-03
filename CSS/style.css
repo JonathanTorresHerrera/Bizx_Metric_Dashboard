@@ -1,1 +1,40 @@
+/*These are the colors used throughout the dashboard*/
+/*
+Primary: #30BCED
+Primary light: #63C6D9
+Primary dark: #0D49A2
 
+Grey: #CECECE
+Grey light: #EDEDED
+Grey dark: #707070
+
+Primary typography: #952D2D
+Primary typography light: #FC5130
+Primary typography dark: #888484
+*/
+:root {
+  --color-primary: #30BCED;
+  --color-primary-light: #63C6D9;
+  --color-primary-dark: #0D49A2; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
