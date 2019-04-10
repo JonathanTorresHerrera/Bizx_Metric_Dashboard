@@ -14,13 +14,70 @@
 
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
         <div class="container">
-            <div>Test Test
+            <header class="header">
+                <img src="img/BIZX-Logo (1).png" alt="Bizx Logo" class="logo">
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search...">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
 
+                <nav class="user-nav">
+
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-bell"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+
+                    <div class="user-nav__icon-box">    
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-share"></use>
+                        </svg>
+                    </div>    
+                    
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </div>
+
+                    <div class="user-nav__user">
+                        <img src="img/user_photo.jpg" alt="User Photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Jonathan</span>
+                    </div>
+
+                </nav>
+            </header>
+
+
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                                </svg>
+                                <span>Date</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="legal">
+                        &copy; 2019 by BIZX. <br> Internal Use Only.
+                    </div>
+                </nav>
+
+
+                <main class="dash-view">
+                    Dash view
+                </main>
             </div>
         </div>
         
