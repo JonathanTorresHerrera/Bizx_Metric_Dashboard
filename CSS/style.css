@@ -1,13 +1,24 @@
 :root {
+  /*USE THESE FOR BACKGROUNDS*/
   --color-primary: #30BCED;
-  --color-primary-light: #63C6D9;
-  --color-primary-dark: #0D49A2;
-  --color-grey: #E8E8E8;
-  --color-grey-light: #F5F5F5;
-  --color-grey-dark: #707070;
-  --color-primary-typography: #952D2D;
-  --color-primary-typography-light: #FC5130;
-  --color-primary-typography-dark: #888484;
+  --color-primary-light: #59C8F0;
+  --color-primary-dark: #1C708E;
+  --color-secondary: #FC5130;
+  --color-secondary-light: ;
+  --color-secondary-dark: ;
+  /*GREY COLORS FOR RANDOM ITEMS*/
+  --color-grey: #D0D0D0;
+  --color-grey-light-1: #ECECEC;
+  --color-grey-light-2: #F3F3F3;
+  --color-grey-dark-1: #A2A2A2;
+  --color-grey-dark-2: #5C5C5C;
+  /*THESE ARE USED FOR TYPOGRAPHY*/
+  --color-primary-typography: #FC5230;
+  --color-primary-typography-light-1: #FC7459;
+  --color-primary-typography-light-2: #FDA897;
+  --color-primary-typography-dark-1: #B03921;
+  --color-primary-typography-dark-2: #642013;
+  /*DROP SHAADOW FOR RANDOM ITEMS, INCLUDING TYPOGRAPHY*/
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3); }
 
 * {
@@ -35,16 +46,16 @@ body {
 
 .container {
   max-width: 120rem;
-  margin: 8rem auto;
-  background-color: var(--color-grey-light);
+  margin: 4rem auto;
+  background-color: var(--color-primary-dark);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
 
 .header {
   font-size: 1.4rem;
   height: 7rem;
-  background-color: #fff;
-  border-bottom: var(--color-grey);
+  background-color: var(--color-grey-light-2);
+  border-bottom: var(--color-grey-light-1);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -53,7 +64,7 @@ body {
   display: flex; }
 
 .sidebar {
-  background-color: var(--color-grey-dark);
+  background-color: var(--color-primary-light);
   /*Experiment with percent in flex property to grow/shrink side bar*/
   flex: 0 0 18%;
   display: flex;
@@ -61,10 +72,20 @@ body {
   justify-content: space-between; }
 
 .dash-view {
-  background-color: #fff;
   background-color: orangered;
   flex: 1;
-  height: 70rem; }
+  height: 70rem;
+  padding: 0; }
+
+.metric-boxes__box {
+  background-color: white;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around; }
 
 .logo {
   height: 3.25rem;
@@ -89,12 +110,12 @@ body {
     .search__input:focus {
       outline: none;
       width: 100%;
-      background-color: var(--color-grey-light); }
+      background-color: var(--color-grey-light-1); }
     .search__input::-webkit-input-placeholder {
       font-weight: 100;
       color: var(--color-primary-typography-dark); }
   .search__input:focus + .search__button {
-    background-color: var(--color-grey-light); }
+    background-color: var(--color-grey-light-1); }
   .search__button {
     border: none;
     background-color: var(--color-grey); }
@@ -143,9 +164,44 @@ body {
     margin-right: 1rem; }
 
 /* SIDE NAVIGATION*/
-.side-nav__icon {
-  width: 1.75rem;
-  height: 1.75rem; }
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem; }
+  .side-nav__item {
+    position: relative; }
+    .side-nav__item:not(:last-child) {
+      margin-bottom: .5rem; }
+  .side-nav__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-grey);
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s; }
+  .side-nav__item:hover::before, .side-nav__item--avtive:hover::before {
+    transform: scaleY(1);
+    width: 100%; }
+  .side-nav__link:link, .side-nav__link:visited {
+    color: var(--color-grey-light);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center; }
+  .side-nav__icon:hover {
+    color: orangered; }
+  .side-nav__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 2rem;
+    fill: currentColor; }
 
 .legal {
   font-size: 1.2rem;

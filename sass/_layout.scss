@@ -1,7 +1,7 @@
 .container {
     max-width: 120rem;
-    margin: 8rem auto;
-    background-color: var( --color-grey-light);
+    margin: 4rem auto;
+    background-color: var(--color-primary-dark);
     box-shadow: var(--shadow-dark);
 
     min-height: 50rem;
@@ -11,8 +11,8 @@
 .header {
     font-size: 1.4rem;
     height: 7rem;
-    background-color: #fff;
-    border-bottom: var(--color-grey);
+    background-color: var(--color-grey-light-2);
+    border-bottom: var(--color-grey-light-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@
 }
 
 .sidebar {
-    background-color: var(--color-grey-dark);
+    background-color: var(--color-primary-light);
     /*Experiment with percent in flex property to grow/shrink side bar*/
     flex: 0 0 18%;
 
@@ -36,9 +36,23 @@
 }
 
 .dash-view {
-    background-color: #fff;
     background-color: orangered;
     flex: 1;
     height: 70rem;
+    padding: 0;
+
+}
+
+.metric-boxes__box {
+    background-color: white;
+    margin: 5rem;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+    
+
 
 }
