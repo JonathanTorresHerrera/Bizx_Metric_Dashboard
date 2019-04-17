@@ -126,18 +126,12 @@
 /* SIDE NAVIGATION*/
 
 .side-nav {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     list-style: none;
     margin-top: 3.5rem;
-    
-    input {
-        margin-left: 1rem;
-        text-align: center;
-        position: relative;
-    }
 
-    &__item {
-        position: relative;
+    &__item {        
+        color: var(--color-grey-light-2);
 
         &:not(:last-child) {
             margin-bottom: .5rem;
@@ -168,7 +162,7 @@
         
         
     }
-
+/*
     &__item:link, 
     &__item:visited {
         color: var(--color-grey-light-10);  
@@ -186,7 +180,7 @@
     &__icon:hover {
         color: var(--color-grey-dark-2);
     }
-
+*/
     &__icon {
         width: 1.75rem;
         height: 1.75rem;
