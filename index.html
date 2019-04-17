@@ -13,80 +13,85 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900" rel="stylesheet">
 
     </head>
+    <header class="header">
+            <img src="img/BIZX-Logo (1).png" alt="Bizx Logo" class="logo">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search...">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <nav class="user-nav">
+
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-bell"></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+
+                <div class="user-nav__icon-box">    
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-share"></use>
+                    </svg>
+                </div>    
+
+                <div class="user-nav__user">
+                    <img src="img/user_photo.jpg" alt="User Photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Jonathan</span>
+                </div>
+
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-menu"></use>
+                    </svg>
+                </div>
+
+            </nav>
+        </header>
+
     <body>
-        <div class="container">
-            <header class="header">
-                <img src="img/BIZX-Logo (1).png" alt="Bizx Logo" class="logo">
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search...">
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
-                </form>
-
-                <nav class="user-nav">
-
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-bell"></use>
-                        </svg>
-                        <span class="user-nav__notification">13</span>
-                    </div>
-
-                    <div class="user-nav__icon-box">    
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-share"></use>
-                        </svg>
-                    </div>    
-
-                    <div class="user-nav__user">
-                        <img src="img/user_photo.jpg" alt="User Photo" class="user-nav__user-photo">
-                        <span class="user-nav__user-name">Jonathan</span>
-                    </div>
-
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-menu"></use>
-                        </svg>
-                    </div>
-
-                </nav>
-            </header>
-
-
-            <div class="content">
-                <nav class="sidebar">
-                    <ul class="side-nav">
-                        <li class="side-nav__item side-nav__item--active">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-calendar"></use>
-                                </svg>
-                                <span>Date</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="legal">
-                        &copy; 2019 by BIZX. <br> Internal Use Only.
-                    </div>
-                </nav>
-
-
-                <main class="dash-view">
-                    <div class="metric-boxes">
-                        <div class="metric-boxes__box box1">Box 1</div>
-                        <div class="metric-boxes__box box2">Box 2</div>
-                        <div class="metric-boxes__box box3">Box 3</div>
-                        <div class="metric-boxes__box box4">Box 4</div>
-                        <div class="metric-boxes__box box5">Box 5</div>
-                        <div class="metric-boxes__box box6">Box 6</div>
-                    </div>
-                </main2
+        
+        <section class="main-content">
+            <div class="heading">
+                    <span>Dashboard</span>
             </div>
-        </div>
+            <div class="container">
+                <div class="content">
+                    <nav class="sidebar">
+                        <ul class="side-nav">
+                            <li class="side-nav__item side-nav__item--active">
+                                <label for="date"></label>  
+                                        Date<br>
+                                    <input id="date" type="date" >   
+                                    <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                                    </svg>
+                            </li>
+                        </ul>
+
+                        <div class="legal">
+                            &copy; 2019 by BIZX LLC. <br> Internal Use Only.
+                        </div>
+                    </nav>
+
+
+                    <main class="dash-view">
+                        <div class="metric-boxes">
+                            <div class="metric-boxes__box box1">Box 1</div>
+                            <div class="metric-boxes__box box2">Box 2</div>
+                            <div class="metric-boxes__box box3">Box 3</div>
+                            <div class="metric-boxes__box box4">Box 4</div>
+                            <div class="metric-boxes__box box5">Box 5</div>
+                            <div class="metric-boxes__box box6">Box 6</div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
         
         <script src="" async defer></script>
     </body>
