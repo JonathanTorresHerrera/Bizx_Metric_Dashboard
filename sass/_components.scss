@@ -191,6 +191,59 @@
     }
 }
 
+.metric-boxes {
+    padding: 0;
+
+    &__box {
+        height: 45rem;
+        border: solid black;
+        align-items: flex-start;
+    }
+    
+
+    &__box--header {
+        background-color: red;
+        color: wheat;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 57rem;
+        height: 5rem;
+        padding: 1.5rem 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        
+    }
+
+    &__box--heading {
+        font-size: 2rem;
+        padding: 0;
+
+
+    }
+
+    &__box--lock {
+
+
+    }
+
+    &__box--dropdown {
+
+
+    }
+
+    &__box--info {
+
+
+    }
+
+}
+
+
+
+
+
 .legal {
     font-size: 1.2rem;
     text-align: center;
