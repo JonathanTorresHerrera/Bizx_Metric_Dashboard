@@ -55,17 +55,23 @@
 .dash-view {
     width: 100%;
     position: relative;
-    height: 50rem;
+    height: 100rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    
+    
     
 }
 .metric-boxes-1 {
-    height: 100%;
+    position: relative;
     display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+    //align-items: center;
+    //width: 80%;
+    // justify-content: space-evenly;
+    //margin: 0;
+    //padding: 0;
+   // background-color: none; 
     
 
     
@@ -73,12 +79,16 @@
 }
 
 .metric-boxes-2 {
-    height: 100%;
+    position: relative;
+    top: 50rem;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+    //height: auto;
+    //flex-wrap: wrap;
+    //align-items: center;
+    // justify-content: center;
+   // margin: 0;
+   // padding: 0;
+   // width: 80%;
 
     
 
