@@ -200,8 +200,8 @@
     
 
     &__box--header {
-        background-color: rgb(224, 172, 172);
-        color: rgb(22, 18, 12);
+        background-color: var(--color-secondary-dark-1);
+        color: var(--color-grey-light-9);
         display:flex;
         flex-direction: row;
         justify-content: space-between;
@@ -243,5 +243,24 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--color-grey-light-5);
+
+}
+
+.runnerbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__boxes {
+        display: flex;
+        width: auto;
+        min-width: 50rem;
+        font-size: 16px;
+        border-left: .2rem var(--color-secondary-dark-1) solid;
+        justify-content: space-around;
+    
+    }
 
 }
