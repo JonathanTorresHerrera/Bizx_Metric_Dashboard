@@ -255,6 +255,9 @@
         min-width: 50rem;
         font-size: 16px;
         border-left: .2rem var(--color-secondary-dark-1) solid;
+        &:last-child {
+            border-right: .2rem var(--color-secondary-dark-1) solid;
+        }
         justify-content: space-around;
     
     }
