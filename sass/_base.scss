@@ -51,6 +51,17 @@
 
 }
 
+
+//Break Points
+$bp-one-2560: 160em; // 2560px divided 16 
+$bp-two-1920: 120em; // 1920px divided 16 
+$bp-three-1280: 80em; // 1280px divided 16 
+$bp-four-1024: 64em; // 1024px divided 16 
+$bp-five-768: 48em; // 768px divided 16 
+$bp-six-480: 30em; // 480px divided 16 
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -83,7 +94,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-    
 
-    
+
 }

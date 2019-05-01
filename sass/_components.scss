@@ -146,9 +146,7 @@
         height: 100%;
         width: 3px;
         background-color: var(--color-grey-light-1);
-        transform: scaleY(0);
-        transition: transform .2s, width .4s cubic-bezier(1,0,0,1) .2s;
-        z-index: 100;
+
         
     }
 
@@ -158,25 +156,7 @@
         width: 100%;
         
     }
-/*
-    &__item:link, 
-    &__item:visited {
-        color: var(--color-grey-light-10);  
-        text-decoration: none;
-        text-transform: uppercase;
-        display: block;
-        padding: 1.5rem 3rem;  
-        position: relative; 
-         
 
-        display: flex;
-        align-items: center;
-    }
-
-    &__icon:hover {
-        color:  var(--color-grey-dark-2);
-    }
-*/
     &__icon {
         width: 1.75rem;
         height: 1.75rem;
@@ -189,13 +169,29 @@
 
 .metric-boxes {
     padding: 0;
+    flex: 1;
+
 
     &__box {
-        height: 45rem;
+        height:45rem;
+        width: 60rem;
         align-items: flex-start;
         background-color: white;
         box-shadow: var(--shadow-dark);
         border-radius: .2rem;
+
+        @media only screen and (max-width: $bp-two-1920) {
+            height: 40rem;
+            width: 45rem;
+
+        }
+
+        @media only screen and (max-width: $bp-three-1280) {
+            height: 30rem;
+            width: 30rem;
+
+        }
+
     }
     
 
@@ -206,7 +202,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 57rem;
+        width: inherit;
         height: 5rem;
         padding: 1.5rem 0;
         padding-left: 3rem;
