@@ -13,16 +13,7 @@
     margin: 10rem auto;
     max-width: 240rem;
     min-height: 50rem;
-    float: 1;
-
-
-}
-
-.main-container {
-    background-color: rgba(255, 255, 255, 0);
-    height: 100rem;
-    width: 100%;
-    display: flex;
+    
 
     @media only screen and (max-width: $bp-two-1920) {
         height: 50em;
@@ -31,10 +22,33 @@
     }
 
     @media only screen and (max-width: $bp-three-1280) {
-        height: inherit;
-        width: 120em;
-        flex: 1;
+        height: auto;
+        width: auto;
     }
+
+}
+
+.main-container {
+    background-color: rgba(255, 255, 255, 0);
+    height: 100rem;
+    width: 100%;
+    display: flex;
+    align-content: center;
+
+    @media only screen and (max-width: $bp-two-1920) {
+        height: 50em;
+        width: 12em;
+
+    }
+
+    @media only screen and (max-width: $bp-three-1280) {
+        margin: 20px;
+        height: 47em;
+        width: 100em;
+        display: flex;
+    }
+
+    
 
 }
 
@@ -85,6 +99,23 @@
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
 
+    @media only screen and (max-width: $bp-two-1920) {
+        position: absolute;
+        display: flex;
+        width: 120em;
+
+
+    }
+
+    @media only screen and (max-width: $bp-three-1280) {
+        height: auto;
+        width: auto;
+        position: relative;;
+        display: flex;
+        
+        
+    }
+
 }
 
 .dashboard {
@@ -106,8 +137,12 @@
     }
 
     @media only screen and (max-width: $bp-three-1280) {
-        width: 100em;
-        flex: 1;
+       display: flex;
+       position: relative;
+       align-content: space-between;
+       align-items: center;
+       justify-content: center;
+       
     }
     
 }
@@ -132,16 +167,16 @@
     background-color: rgba(255, 255, 255, 0);
 
     @media only screen and (max-width: $bp-two-1920) {
-        width: 120em;
-        height: 1em;
-        flex: 1;
-        align-items: flex-start;
+        
+
 
     }
 
     @media only screen and (max-width: $bp-three-1280) {
-        width: 100em;
-        flex: 1;
+        height: auto;
+        position: relative;
+        display: flex;
+
     }
     
     
@@ -158,16 +193,16 @@
     background-color: rgba(73, 49, 49, 0);
 
     @media only screen and (max-width: $bp-two-1920) {
-        width: 120em;
-        height: 1em;
-        flex: 1;
-        align-items: flex-start;
+       
+
 
     }
 
     @media only screen and (max-width: $bp-three-1280) {
-        width: 100em;
-        flex: 1;
+        height: auto;
+        position: relative;
+        display: flex;
+
     }
 
 }  
@@ -180,6 +215,16 @@
     bottom: 4rem;
     height: 6rem;
     width: 100%;
+
+    @media only screen and (max-width: $bp-two-1920) {
+
+
+    }
+
+    @media only screen and (max-width: $bp-three-1280) {
+        height: 3rem;     
+
+    }
 
 
 }

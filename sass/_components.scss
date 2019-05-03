@@ -187,8 +187,8 @@
         }
 
         @media only screen and (max-width: $bp-three-1280) {
-            height: 30rem;
-            width: 30rem;
+            height: 20rem;
+            width: 20rem;
 
         }
 
@@ -240,6 +240,15 @@
     padding: 2.5rem;
     color: var(--color-grey-light-5);
 
+    @media only screen and (max-width: $bp-two-1920) {
+        
+    }
+
+    @media only screen and (max-width: $bp-three-1280) {
+        font-size: .80rem;
+
+    }
+
 }
 
 .runnerbar-container {
@@ -255,11 +264,32 @@
         min-width: 50rem;
         font-size: 16px;
         border-left: .2rem var(--color-secondary-dark-1) solid;
+        justify-content: space-around;
+
         &:last-child {
             border-right: .2rem var(--color-secondary-dark-1) solid;
         }
-        justify-content: space-around;
-    
-    }
 
+        @media only screen and (max-width: $bp-two-1920) {
+            height: auto;
+            font-size: 13px;
+            border-left: .14rem var(--color-secondary-dark-1) solid;
+
+            &:last-child {
+            border-right: .2rem var(--color-secondary-dark-1) solid;
+            }
+
+        }
+    
+        @media only screen and (max-width: $bp-three-1280) {
+            height: auto;
+            font-size: 13px;
+            border-left: .14rem var(--color-secondary-dark-1) solid;
+
+            &:last-child {
+            border-right: .2rem var(--color-secondary-dark-1) solid;
+            }
+    
+        }
+    }
 }
