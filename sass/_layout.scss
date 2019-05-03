@@ -23,6 +23,19 @@
     height: 100rem;
     width: 100%;
     display: flex;
+
+    @media only screen and (max-width: $bp-two-1920) {
+        height: 50em;
+        width: 12em;
+
+    }
+
+    @media only screen and (max-width: $bp-three-1280) {
+        height: inherit;
+        width: 120em;
+        flex: 1;
+    }
+
 }
 
 .sidebar-container {
@@ -85,6 +98,17 @@
     align-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
+
+    @media only screen and (max-width: $bp-two-1920) {
+        width: 120em;
+        flex: 1;
+
+    }
+
+    @media only screen and (max-width: $bp-three-1280) {
+        width: 100em;
+        flex: 1;
+    }
     
 }
 
@@ -106,6 +130,19 @@
     align-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
+
+    @media only screen and (max-width: $bp-two-1920) {
+        width: 120em;
+        height: 1em;
+        flex: 1;
+        align-items: flex-start;
+
+    }
+
+    @media only screen and (max-width: $bp-three-1280) {
+        width: 100em;
+        flex: 1;
+    }
     
     
 }
@@ -119,6 +156,19 @@
     align-content: center;
     align-items: center;
     background-color: rgba(73, 49, 49, 0);
+
+    @media only screen and (max-width: $bp-two-1920) {
+        width: 120em;
+        height: 1em;
+        flex: 1;
+        align-items: flex-start;
+
+    }
+
+    @media only screen and (max-width: $bp-three-1280) {
+        width: 100em;
+        flex: 1;
+    }
 
 }  
 
