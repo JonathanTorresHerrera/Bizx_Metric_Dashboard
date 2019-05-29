@@ -48,8 +48,6 @@
         display: flex;
     }
 
-    
-
 }
 
 .sidebar-container {
@@ -58,7 +56,6 @@
     min-width: auto;
     max-width: auto;
 
-    
 }
 
 .sidebar {
@@ -168,8 +165,6 @@
 
     @media only screen and (max-width: $bp-two-1920) {
         
-
-
     }
 
     @media only screen and (max-width: $bp-three-1280) {
@@ -178,7 +173,6 @@
         display: flex;
 
     }
-    
     
 }
 
@@ -194,8 +188,6 @@
 
     @media only screen and (max-width: $bp-two-1920) {
        
-
-
     }
 
     @media only screen and (max-width: $bp-three-1280) {
@@ -218,13 +210,11 @@
 
     @media only screen and (max-width: $bp-two-1920) {
 
-
     }
 
     @media only screen and (max-width: $bp-three-1280) {
         height: 3rem;     
 
     }
-
 
 }
